@@ -6,7 +6,7 @@ Product: EaseUS Partition Master
 Component: EuGdiDrv.sys
 SHA-256: 57930fe83eec60b384532659462eeb42a9e885c78fcf1a007f8e1d6177ab9e69
 Size: 14472 bytes
-PE timestamp: 2009-09-15 07:13:53 UTC
+
 Version resource: none
 Signer: CN="CHENGDU YIWO Tech Development Co., Ltd.", thumbprint 34589F1FB41AAC7C3542B4016C8B0D6C88DF399D
 Device: \\.\eausNatvGdi1
@@ -27,6 +27,11 @@ This note covers that file and those four IOCTL codes. CVE-2026-12781 identifies
 The installer version that contained this exact file was not recorded by this test.
 
 Suggested fix: reject these IOCTLs when the input length is 0, and do not read SystemBuffer until it is known to be non-null.
+
+Credit:
+type finder, value: Xingkai Ding
+type other, value: Jiaye Pan (academic advisor)
+type other, value: Letian Sha (academic advisor)
 
 CVE:
 ```
